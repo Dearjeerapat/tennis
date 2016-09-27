@@ -89,4 +89,11 @@ describe("Tennis game", function() {
     tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Love - Forty');
   });
+  it('should echo "Fifteen - Fifteen" when player A and player B have 15 point', function() {
+    var tennis = new Tennis();
+    tennis.start();
+    tennis.playerAGetScore();
+    tennis.playerBGetScore();
+    expect(tennis.echo()).toEqual('Fifteen - Fifteen');
+  });
 });

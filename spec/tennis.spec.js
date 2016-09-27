@@ -65,4 +65,10 @@ describe("Tennis game", function() {
     tennis.playerAGetScore();
     expect(tennis.echo()).toEqual('Forty - Love');
   });
+  it('should echo "Love - Fifteen" when player B get first score', function() {
+    var tennis = new Tennis();
+    tennis.start();
+    tennis.playerBGetScore();
+    expect(tennis.echo()).toEqual('Love - Fifteen');
+  });
 });

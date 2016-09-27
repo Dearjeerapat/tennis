@@ -30,6 +30,7 @@ function Tennis(){
   }
   this.echo = function(){
     if(scoreA == 0 && scoreB == 0){return 'Love - Love';}
+    else if (scoreA == 15 && scoreB == 0){return 'Fifteen - Love';}
   }
 
 

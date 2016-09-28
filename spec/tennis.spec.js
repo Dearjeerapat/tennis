@@ -135,5 +135,15 @@ describe("Tennis game", function() {
     tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Thirty - Thirty');
   });
+  it('should echo "Thirty - Forty" when player A have 30 point, player B have 40 point', function() {
+    var tennis = new Tennis();
+    tennis.start();
+    tennis.playerAGetScore();
+    tennis.playerAGetScore();
+    tennis.playerBGetScore();
+    tennis.playerBGetScore();
+    tennis.playerBGetScore();
+    expect(tennis.echo()).toEqual('Thirty - Forty');
+  });
 
 });

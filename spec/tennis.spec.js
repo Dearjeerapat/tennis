@@ -110,6 +110,8 @@ describe("Tennis game", function() {
     var tennis = new Tennis();
     tennis.start();
     tennis.playerAGetScore();
+    tennis.playerAGetScore();
+    tennis.playerBGetScore();
     tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Thirty - Thirty');
   });

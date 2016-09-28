@@ -103,6 +103,7 @@ describe("Tennis game", function() {
     tennis.start();
     tennis.playerAGetScore();
     tennis.playerBGetScore();
+    tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Fifteen - Thirty');
   });
   it('should echo "Thirty - Thirty" when player A have 30 point, player B have 30 point', function() {
